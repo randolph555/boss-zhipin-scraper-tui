@@ -1,0 +1,39 @@
+[project]
+name = "boss-zhipin-scraper"
+version = "2.0.0"
+description = "BOSS直聘职位抓取工具 — Chrome CDP + API 明文薪资"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [
+    { name = "eatmoreduck" }
+]
+keywords = ["zhipin", "boss", "scraper", "cdp", "jobs"]
+
+dependencies = [
+    "websocket-client>=1.6.0,<2.0.0",
+    "requests>=2.28.0,<3.0.0",
+    "textual>=0.80.0",
+]
+
+[project.optional-dependencies]
+all = [
+    "websocket-client>=1.6.0,<2.0.0",
+    "requests>=2.28.0,<3.0.0",
+    "textual>=0.80.0",
+]
+
+[project.scripts]
+# 模块路径对应 [tool.hatch.build.targets.wheel] 的 packages=["scripts"]，
+# 安装后顶层包名为 scripts，故入口是 scripts.boss_cdp_raw:main
+boss-scraper = "scripts.boss_cdp_raw:main"
+boss-summary = "scripts.job_summary:main"
+boss-live = "scripts.boss_live_tui:main"
+boss-message-probe = "scripts.boss_message_probe:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["scripts"]
