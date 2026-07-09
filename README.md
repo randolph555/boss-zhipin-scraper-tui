@@ -103,6 +103,10 @@ uv run python3 scripts/job_summary.py
 
 ![TUI 内回复](./docs/images/tui/6.png)
 
+### 动态演示
+
+![BOSS Live TUI 动态演示](./docs/images/tui/terminal-demo.gif)
+
 ## 架构边界
 
 TUI 主要由两层组成：

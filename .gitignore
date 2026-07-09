@@ -35,6 +35,7 @@ docs/
 !docs/images/
 !docs/images/tui/
 !docs/images/tui/*.png
+!docs/images/tui/*.gif
 
 # Local skill tooling config (baoyu-image-gen etc.)
 .baoyu-skills/
