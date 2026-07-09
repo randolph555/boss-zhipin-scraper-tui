@@ -137,6 +137,10 @@ TUI 主要由两层组成：
 - [爬虫版 / CLI 文档](./README.crawler.md)
 - [英文文档](./README.en.md)
 
+## Friendly Link
+
+- [LINUX DO](https://linux.do/) — a Chinese developer community.
+
 ## License
 
 MIT
